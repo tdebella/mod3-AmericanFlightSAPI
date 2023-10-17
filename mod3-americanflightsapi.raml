@@ -6,7 +6,7 @@ types:
   AmericanFlight:
 #flights is the main resource
 /flights:
-#get, post, put, patch, delete 
+#get, post, put, patch, delete are methods(actions) act upon the resource 
   get:
     queryParameters:
       destination:
@@ -30,6 +30,7 @@ types:
               
   post:
 
+# ID is nested resource
   /{ID}:
     get:
     delete:
