@@ -6,6 +6,7 @@ types:
   AmericanFlight:
 
 /flights:
+  #flights is the main resource
   get:
     queryParameters:
       destination:
@@ -14,6 +15,7 @@ types:
           - SFO
           - LAX
           - CLE
+    #we place sensitive info in the headers
     headers:
       client_id:
         required: false
