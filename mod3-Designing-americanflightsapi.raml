@@ -7,10 +7,11 @@ types:
 
 uses:
   security: /library/Library.raml
-  
+
   #flights is the main resource
 /flights:
-  is: [client_id_enforcement]
+  is: [security.client_id_enforcement]
+  
     #get, post, put, patch, delete are methods(actions) acts upon the resource 
   get:
     queryParameters:
