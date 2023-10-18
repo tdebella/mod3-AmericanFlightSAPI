@@ -5,6 +5,8 @@ title: mod3-Desiging-AmericanFlightSAPI
 types:
   AmericanFlight: !include /dataTypes/americanFlightDataType.raml
 
+uses:
+  security
   #flights is the main resource
 /flights:
   is: [client_id_enforcement]
