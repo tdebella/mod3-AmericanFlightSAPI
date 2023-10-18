@@ -16,8 +16,7 @@ types:
           - SFO
           - LAX
           - CLE
-      #we place sensitive info in the headers
-    
+
     #we can create fragment in 3 ways: 
         #1) write the code on Canvas  
         #2) create folder & file in Files  
@@ -30,6 +29,12 @@ types:
             examples: !include /Examples/americanFlightsExample.raml
 
   post:
+      #we place sensitive info in the headers
+    headers:
+      client_id:
+        required: false
+      client_secret:
+        required: false
     body:
       application/json:
         type: AmericanFlight
