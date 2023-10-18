@@ -1,1 +1,9 @@
 #%RAML 1.0 Library
+traits:
+  client_id_enforcement:
+    #we place sensitive info in the headers
+    headers:
+      client_id:
+        required: false
+      client_secret:
+        required: false
