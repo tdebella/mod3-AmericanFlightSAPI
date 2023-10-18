@@ -29,12 +29,6 @@ types:
             examples: !include /Examples/americanFlightsExample.raml
 
   post:
-      #we place sensitive info in the headers
-    headers:
-      client_id:
-        required: false
-      client_secret:
-        required: false
     body:
       application/json:
         type: AmericanFlight
