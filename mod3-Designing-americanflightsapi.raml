@@ -6,7 +6,8 @@ types:
   AmericanFlight: !include /dataTypes/americanFlightDataType.raml
 
 uses:
-  security
+  security: /library/Library.raml
+  
   #flights is the main resource
 /flights:
   is: [client_id_enforcement]
