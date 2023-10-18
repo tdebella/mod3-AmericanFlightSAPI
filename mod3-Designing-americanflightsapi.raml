@@ -39,7 +39,11 @@ types:
         type: AmericanFlight
         example: !include /Examples/americanFlightNoIDExample.raml
     responses:
-      
+      201:
+        body:
+          application/json:
+            example:
+              
           
     # ID is nested resource
   /{ID}:
