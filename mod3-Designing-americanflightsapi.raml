@@ -5,15 +5,6 @@ title: mod3-Desiging-AmericanFlightSAPI
 types:
   AmericanFlight: !include /dataTypes/americanFlightDataType.raml
 
-traits:
-  client_id_enforcement:
-    #we place sensitive info in the headers
-    headers:
-      client_id:
-        required: false
-      client_secret:
-        required: false
-
   #flights is the main resource
 /flights:
   is: [client_id_enforcement]
