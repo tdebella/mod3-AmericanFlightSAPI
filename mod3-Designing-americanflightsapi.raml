@@ -4,7 +4,14 @@ title: mod3-Desiging-AmericanFlightSAPI
 
 types:
   AmericanFlight: !include /dataTypes/americanFlightDataType.raml
-
+traits:
+  
+        #we place sensitive info in the headers
+    headers:
+      client_id:
+        required: false
+      client_secret:
+        required: false
   #flights is the main resource
 /flights:
     #get, post, put, patch, delete are methods(actions) acts upon the resource 
