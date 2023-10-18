@@ -2,7 +2,7 @@
 title: mod3-Desiging-AmericanFlightSAPI
 #baseUri: http://localhost:8081
 
-    #we define/ declare sensitive data types here
+    #we define/ declare data types here
 types:
   AmericanFlight: !include /dataTypes/americanFlightDataType.raml
 
@@ -12,7 +12,7 @@ uses:
 
   #flights is the main resource
 /flights:
-  # we use/ apply the defined sensitive data here
+  # we call/use the defined sensitive data here
   is: [security.client_id_enforcement]
 
     #get, post, put, patch, delete are methods(actions) acts upon the resource 
