@@ -73,7 +73,11 @@ uses:
           type: AmericanFlight
           example: !include /Examples/americanFlightNoIDExample.raml
       responses:
-        
+        200:
+          body:
+            application/json:
+              example:
+                message: Flight replaced 
       
     patch:
       
