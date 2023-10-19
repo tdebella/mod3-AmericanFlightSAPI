@@ -68,7 +68,8 @@ uses:
               example:
                 message: Flight deleted successfully. 
     
-      #put method replaced the resource completely. On mocking we can enter any ID 
+      #put method replaced the resource completely. ID is required, on mocking we can  
+      #enter any ID number, but on actual DB we MUST use actual ID number
     put:
       body:
         application/json:
