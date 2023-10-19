@@ -49,6 +49,7 @@ uses:
               message: Flight added successfully.
           
     # ID is nested resource
+  
   /{ID}:
     is: [security.client_id_enforcement]
     get:
@@ -67,6 +68,9 @@ uses:
               example:
                 message: Flight deleted successfully. 
     put:
+      body:
+        application/json:
+          
       
     patch:
       
