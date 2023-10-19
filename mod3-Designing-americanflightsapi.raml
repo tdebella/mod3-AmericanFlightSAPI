@@ -68,7 +68,7 @@ uses:
               example:
                 message: Flight deleted successfully. 
     
-      #put method replaced [UPDATED] the resource completely. ID is required, on 
+      #put method replace [updates] the resource completely. ID is required, on 
       #mocking we can enter any ID number, but on actual DB we MUST use actual ID number
     put:
       body:
@@ -81,7 +81,7 @@ uses:
             application/json:
               example:
                 message: Flight replaced successfully.
-      #patch method replaced [UPDATED] the resource completely. ID is required, on 
+      #patch method replace [updates] the resource COMPLATELY. ID is required, on 
       #mocking we can enter any ID number, but on actual DB we MUST use actual ID number
     patch:
       body:
