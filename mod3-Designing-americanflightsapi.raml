@@ -70,6 +70,7 @@ uses:
     
       #put method replaced the resource completely. ID is required, on mocking we can  
       #enter any ID number, but on actual DB we MUST use actual ID number
+      #
     put:
       body:
         application/json:
@@ -81,7 +82,16 @@ uses:
             application/json:
               example:
                 message: Flight replaced successfully.
-      
     patch:
+      body:
+        application/json:
+          type: AmericanFlight
+          example: !include /Examples/americanFlightNoIDExample.raml
+      responses:
+        200:
+          body:
+            application/json:
+              example:
+                message: Flight replaced successfully.
       
       
