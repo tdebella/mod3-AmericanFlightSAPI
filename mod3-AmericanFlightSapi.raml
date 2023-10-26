@@ -41,13 +41,13 @@ documentation:
         body:
           application/json: 
             type: AmericanFlight[]
-            examples: !include /Examples/americanFlightsExample.raml
+            examples: !include /Examples/AmericanFlightsExample.raml
 
   post:
     body:
       application/json:
         type: AmericanFlight
-        example: !include /Examples/americanFlightNoIDExample.raml
+        example: !include /Examples/AmericanFlightNoIDExample.raml
     responses:
       201:
         body:
