@@ -12,7 +12,7 @@
   "apiVersion": "v1",
   "descriptorVersion": "1.0.0",
   "classifier": "raml",
-  "main": "mod3-Designing-americanflightsapi.raml",
+  "main": "mod3-AmericanFlightSapi.raml",
   "assetId": "mod3-americanflightsapi",
   "groupId": "8948cda1-2f6d-4f56-aec3-d451e6eab87b",
   "organizationId": "8948cda1-2f6d-4f56-aec3-d451e6eab87b",
