@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.1",
   "originalFormatVersion": "1.0",
   "apiVersion": "v1",
   "descriptorVersion": "1.0.0",
@@ -8,5 +8,6 @@
   "assetId": "mod3-americanflightsapi",
   "groupId": "8948cda1-2f6d-4f56-aec3-d451e6eab87b",
   "organizationId": "8948cda1-2f6d-4f56-aec3-d451e6eab87b",
-  "name": "mod3-AmericanFlightSAPI"
+  "name": "mod3-AmericanFlightSAPI",
+  "tags": []
 }
